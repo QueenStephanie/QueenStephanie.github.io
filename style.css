@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url(pic/th.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main {
+    width: 90%;
+    background: url() no-repeat center center fixed;
+    min-height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    /* Adjusted logo size */
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    padding: 10px 16px;
+}
+
+ul li a {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkslategray;
+    transition: .4s ease;
+}
+
+ul li a:hover {
+    color: rgb(219, 73, 53);
+}
+
+.info {
+    margin: 6% 7%;
+}
+
+.info h1 {
+    font-size: 65px;
+    color: rgb(36, 32, 30);
+}
+
+.info h3 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.info span {
+    color: rgb(87, 175, 36);
+}
+
+
+.info a {
+    text-decoration: none;
+    color: #fff;
+    background: rgb(36, 32, 30);
+    padding: 10px 18px;
+    border-radius: 10px;
+    transition: .4s ease;
+}
+
+.info a:hover {
+    background: rgb(170, 182, 185);
+}
+
+.image img {
+    height: 500PX;
+    width: 600PX;
+    float: right;
+    margin-top: -400PX;
+    border-radius: 50%;
+
+}
+
+.profile-image {
+    border-radius: 50PX;
+}
+
+.icons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.icons a {
+    color: #000;
+    margin-left: 7%;
+}
+
+.icons ion-icon {
+    font-size: 40px;
+    transition: .4s ease;
+}
+
+.icons ion-icon:hover {
+    color: rgb(113, 127, 131);
+}
+
+/* Sections Styling */
+section {
+    padding: 50px 0;
+}
+
+.hidden1,
+.hidden2,
+.hidden3 {
+    background: url() no-repeat center center fixed;
+    background-size: 50%;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 20px 0 10px;
+}
+
+p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info h1 {
+        font-size: 40px;
+    }
+
+    .info h3 {
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .image {
+        display: none;
+    }
+}
+
+.hidden1 {
+    background-color: rgb(177, 76, 51);
+}
+
+.hidden2 {
+    background-color: violet;
+}
+
+.hidden3 {
+    background-color: lightcoral;
+}
+.name{
+    font-size: xxx-large;
+}
+.span{
+    color: #c72f15;
+
+}
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for visibility */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px; /* Allows boxes to grow and shrink with a minimum width */
+}
+
+.box p {
+    margin-bottom: 10px; /* Spacing between paragraphs */
+}
+
+.home-title, .welcome-message {
+    text-align: center;
+    color: rgb(36, 32, 30);
+}
+
+.home-title {
+    font-size: 65px;
+    margin: 20px 0;
+}
+
+.welcome-message {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.highlight {
+    color: rgb(87, 175, 36);
+}
+.skills-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-subtitle {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.box {
+    flex: 1; /* Make boxes take equal space */
+    margin: 0 10px; /* Space between boxes */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for boxes */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow effect */
+}
+
+.box-title {
+    font-size: 22px; /* Size of the title */
+    margin-bottom: 10px;
+}
+
+.box-text {
+    font-size: 16px; /* Size of the text */
+    line-height: 1.6; /* Spacing for readability */
+}
+
+.highlight {
+    color: rgb(87, 175, 36); /* Highlight color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .box-container {
+        flex-direction: column; /* Stack boxes on smaller screens */
+        align-items: center; /* Center align boxes */
+    }
+}
